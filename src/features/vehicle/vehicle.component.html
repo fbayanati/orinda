@@ -1,1 +1,35 @@
-<p>vehicle works!</p>
+<div>
+  <form #vehicleForm="ngForm">
+    <div style="padding: 2rem 0" class="or-input-text-container">
+      <span class="p-float-label">
+        <input
+          id="float-input"
+          type="text"
+          pInputText
+          ngModel
+          #makeAndModel="ngModel"
+          name="makeAndModel"
+        />
+        <label for="float-input">Username</label>
+      </span>
+    </div>
+
+    <br />
+
+    <button
+      pButton
+      class="or-submit-btn"
+      type="button"
+      label="Submit"
+      (click)="onClick(vehicleForm)"
+    ></button>
+  </form>
+</div>
+
+<div>
+  {{ vehicleForm.value | json }}
+</div>
+
+<div>
+  {{ makeAndModel.value }}
+</div>

@@ -1,0 +1,23 @@
+:host {
+  display: flex;
+  min-width: 40rem;
+  flex-direction: column;
+  font-size: 1.6rem;
+
+  .p-inputtext {
+    font-size: 1.6rem;
+  }
+
+  .or-input-text-container {
+    font-size: 1.6rem;
+  }
+
+  .or-makeAndModel {
+    margin: 1rem 1rem 0.5rem 0;
+  }
+
+  .or-submit-btn {
+    margin: 0.5rem 0;
+    font-size: 1.6rem;
+  }
+}

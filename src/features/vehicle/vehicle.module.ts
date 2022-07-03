@@ -3,15 +3,19 @@ import { CommonModule } from '@angular/common';
 
 import { VehicleRoutingModule } from './vehicle-routing.module';
 import { VehicleComponent } from './vehicle.component';
+import { FormsModule } from '@angular/forms';
 
+import { InputTextModule } from 'primeng/inputtext';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
-  declarations: [
-    VehicleComponent
-  ],
+  declarations: [VehicleComponent],
   imports: [
     CommonModule,
-    VehicleRoutingModule
-  ]
+    VehicleRoutingModule,
+    FormsModule,
+    InputTextModule,
+    ButtonModule,
+  ],
 })
-export class VehicleModule { }
+export class VehicleModule {}
